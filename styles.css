@@ -1,6 +1,7 @@
 /* INITIAL SET UP CSS */
 * {
     box-sizing: border-box;
+    font-size: 1.1rem;
 }
 body {
     width:100%;
@@ -258,11 +259,11 @@ input[type=submit]:hover {
 @media only screen and (max-width: 319px) {
   
   * {
-    font-size: 97%;
+    font-size: 94%;
   }
   
   .div-column {
-    width:96vw;
+    width:94vw;
   }
   .site-banner {
     font-size: 1rem;
@@ -276,7 +277,7 @@ input[type=submit]:hover {
     justify-content: center;
     align-content: center;
     list-style: none;
-    font-size: 0.7rem;
+    font-size: 0.rem;
   }
   .nav-list {
     display: table-cell;
@@ -318,6 +319,12 @@ input[type=submit]:hover {
   }
   .tiktok, .testimonials {
     display: none;
+}
+main {
+  padding:0% 2% 0% 3%;
+}
+.container {
+  padding:0% 2% 0% 3%;
 }
 }
 /* CSS rules for screens with width less than 321-650px*/
