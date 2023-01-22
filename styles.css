@@ -106,7 +106,7 @@ main {
     display: block;
     max-width:600px;
     max-height:400px;
-    width: auto;
+    width: 100%;
     height: auto;
     margin:auto;
 }
