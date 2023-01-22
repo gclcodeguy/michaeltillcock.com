@@ -324,7 +324,11 @@ main {
   padding:0% 2% 0% 3%;
 }
 .container {
+  width:100%;
   padding:0% 2% 0% 3%;
+}
+.blog-article, .blog-filter {
+  width:100%;
 }
 }
 /* CSS rules for screens with width less than 321-650px*/
