@@ -1,0 +1,403 @@
+/* INITIAL SET UP CSS */
+* {
+    box-sizing: border-box;
+}
+body {
+    width:100%;
+    max-width: 100%;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    padding:0;
+    margin: 0;
+}
+/* HEADER CSS */
+header {
+    position:sticky;
+    top:0;
+    z-index: 10;
+    background-color: white;
+    width:100vw;
+    max-width: 100%;
+    padding:0;
+    margin: 0;
+}
+
+.site-banner {
+   color: black;
+   margin:0% 13% 0% 13%;
+   padding: 1% 0% 1% 0%;
+   font-family: monospace, Arial, Helvetica, sans-serif;
+   font-size: 2rem;
+   max-width: 100%;
+}
+/* NAVBAR CSS */
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1rem;
+    margin:1% 10% 0% 10%;
+    max-width: 100%;
+    
+}
+.nav-list {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border:0.01rem black solid;
+    width:18vw;
+    height:5vh;
+    border:0.1px white solid;
+    border-radius: 5px;
+    background-color: black;   
+}
+.nav-selected {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border:0.01rem black solid;
+  width:18vw;
+  height:5vh;
+  border:0.1px white solid;
+  border-radius: 5px;
+  background-color: grey;  
+}
+/* LINKS CSS */
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+/* visited link */
+a:visited {
+   color: white;
+   text-decoration: none;
+  }
+  
+/* mouse over link */
+a:hover {
+   color: yellow;
+   text-decoration: underline;
+  }
+  
+/* selected link */
+a:active {
+   color: grey;
+   text-decoration: none;
+  }
+
+.other-links:link, .other-links:visited, .other-links:hover {
+  color:black;
+}
+/* GENERAL LAYOUT CSS */
+.div-column {
+    width:60vw;
+    margin: auto;
+    border:0.1px black solid;
+    border-radius: 5px;
+    padding:1%;
+    background-color: rgb(252, 245, 245);
+}
+main {
+    width: 100%;
+}
+.home-image {
+    display: block;
+    max-width:600px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+    margin:auto;
+}
+.caption-home {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.half-image {
+  width:50%;
+  border:1px black solid;
+  border-radius: 5px;
+}
+.page-header {
+    text-align: center;
+    font-size: 2rem;
+}
+.indent {
+  margin-left:3%;;
+}
+/* FOOTER CSS */
+.footer-flex{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-between;
+  height: 5%;
+}
+.footer-banner {
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  margin:1% 13% 0% 13%;
+  font-size: 2rem;
+  height:100%;
+}
+.footer-icons-div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width:10%;
+  border: 2px black solid;
+  background-color: black;
+  margin:1% 10% 0% 1%;
+}
+/* CONTACT TABLE CSS*/
+table {
+  table-layout:fixed;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  width: 100%;
+}
+th {
+  border: 1px solid grey;
+  text-align: left;
+  background-color: black;
+  color:white;
+  padding: 1%;
+}
+td {
+  border: 1px solid black;
+  text-align: left;
+  background-color: white;
+  padding: 1%;
+  word-wrap: break-word;
+}
+tr {
+  background-color: white;
+}
+/* CONTACT FORM CSS */
+.container-form {
+  width:50%;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  border: 1px black double;
+}
+input[type=text], textarea {
+  width: 100%;
+  border:1px gray solid;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+}
+input[type=email] {
+  width: 100%;
+  border:1px gray solid;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 1% 5% 1% 5%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+.form-div-border{
+  margin-top: 2%;
+  width:100%;
+}
+.contact-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.blog-article {
+  width:70%;
+  margin: auto;
+  border:0.5px gray solid;
+  padding:1%;
+  background-color:ghostwhite;
+  border-radius: 5px;
+  box-shadow: 10px 3px 5px lightgray;
+  font-size: 1.2rem;
+  margin-bottom: 1%;
+  scroll-margin-top: 8rem;
+}
+.blog-filter{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width:70%;
+  border:1px gray solid;
+  border-radius: 5px;
+  color:black;
+  background-color: black;
+  padding:1%;
+  margin: auto;
+  margin-bottom: 1%;
+}
+.blog-filter-link {
+  border:5px gray double;
+  padding:0.5%;
+  border-radius: 5px;
+  background-color: ghostwhite;
+  color: black !important;
+}
+/* MEDIA RULES BEGIN */
+/* CSS rules for screens with width less than 320px go here */
+@media only screen and (max-width: 319px) {
+  
+  * {
+    font-size: 97%;
+  }
+  
+  .div-column {
+    width:96vw;
+  }
+  .site-banner {
+    font-size: 1rem;
+ }
+  nav ul {
+    margin:0;
+    padding:0;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    font-size: 0.7rem;
+  }
+  .nav-list {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width:100px;
+    height:10%;
+    padding:2%;   
+  }
+  .nav-selected {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    height:10%;
+    padding:2%;  
+  }
+  
+  .footer-icons-div {
+    margin: auto;
+    width:40%;
+  }
+  .footer-banner {
+    
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    margin:1% 13% 0% 13%;
+    font-size: 1rem;
+    height:100%;
+  }
+  .half-image {
+    display: none;
+  }
+  .container-form{
+    width:100%;
+  }
+  .viewport-extend {
+    height:80vh;
+
+  }
+  .tiktok, .testimonials {
+    display: none;
+}
+}
+/* CSS rules for screens with width less than 321-650px*/
+@media only screen and (min-width: 320px) and (max-width: 650px)  {
+  .div-column {
+    width:90vw;
+  }
+  nav ul {
+    margin:0;
+    padding:0;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    font-size: 0.8rem;
+  }
+ 
+  .site-banner {
+    font-size: 1rem;
+ }
+
+.nav-list {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width:150px;
+  height:10%;
+  padding:2%;   
+}
+.nav-selected {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 150px;
+  height:10%;
+  padding:2%;  
+}
+  .footer-icons-div {
+    margin: auto;
+    width:40%;
+  }
+  .footer-banner {
+    
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    margin:1% 13% 0% 13%;
+    font-size: 1rem;
+    height:100%;
+  }
+  .half-image {
+    display: none;
+  }
+  .container-form{
+    width:100%;
+  }
+  .viewport-extend {
+    height:80vh;
+
+  }
+  .tiktok, .testimonials {
+    display: none;
+}
+}
+/* CSS rules for screens with width 651-1080px */
+@media only screen and (min-width: 650px) and (max-width: 1080px)  {
+.div-column {
+  width:90vw;
+  }
+nav ul {
+  margin:0;
+  padding:0;
+  max-width: 100%;
+  font-size: 0.9rem;
+  }
+.footer-flex{
+  flex-flow: row nowrap;
+  }
+.footer-icons-div {
+  width:20%;
+  font-size: 0.9rem;
+  } 
+}

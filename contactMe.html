@@ -1,0 +1,86 @@
+<!--This is the contactMe page to my personal website project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>michaeltillcock.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+</head>
+<body>
+    <!--Banner and Navigation Menu-->
+    <header>
+        <h1 class="site-banner">michaeltillcock.com</h1>
+        <nav>
+            <ul>
+            <li><a href="index.html" class="nav-list">Home</a></li>
+            <li><a href="myBlog.html" class="nav-list">My Blog</a></li>
+            <li><a href="contactMe.html" class="nav-selected">Contact Me</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    
+    <div id="top" class="div-column">
+        <main>
+            <h2 class="page-header">Contact Me</h2>
+                        
+            <div class="container">
+               
+            <h3>Contact Form</h3>
+            <div class="contact-row">                
+                <!--NB: Form does not currently send an email-->
+                <form class="container-form">
+                    <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    </div>
+                
+                    
+                    <div class="form-div-border">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email...">
+                    </div>
+                    
+                    <div class="form-div-border">
+                    <p>I want to discuss:</p>
+                    <input type="radio" id="business" name="discuss" value="Business">
+                    <label for="business">Business Enquiries</label>
+                    <input type="radio" id="other" name="discuss" value="Other">
+                    <label for="other">Other</label>
+                    </div>
+                    
+                    <div class="form-div-border">
+                    <label for="message">Subject</label>
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
+                    </div>
+                    
+                    <div class="form-div-border">
+                    <input type="submit" value="Send">
+                    </div>
+                  </form>
+                  <img class="half-image" src="/src/mt_pic.jpg" alt="Michael getting married">
+            </div>           
+        </main>
+    </div>
+    
+    <hr>
+   <footer class="footer-flex">
+    
+    <h1 class="footer-banner">michaeltillcock.com</h1>
+    
+    <div class="footer-icons-div">
+        <a href="https://www.tiktok.com/@michaeljohngolf" target="_blank"> <i class="lni lni-tiktok"></i></a>
+        <a href="https://www.instagram.com/michaeljohngolf/" target="_blank"> <i class="lni lni-instagram-filled"></i></a>
+        <a href="https://twitter.com/MichaelJohnGolf" target="_blank"> <i class="lni lni-twitter-filled"></i></a>
+        <a href="https://anchor.fm/michael-tillcock" target="_blank"> <i class="lni lni-spotify-original"></i></a>
+        <a href="https://uk.linkedin.com/in/michaeltillcock" target="_blank"> <i class="lni lni-linkedin-original"></i></a> 
+        <a href="#top"><i class="lni lni-pointer-top"></i></a>
+    </div>
+    
+   </footer>
+   
+</body>
+</html>
