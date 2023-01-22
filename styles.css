@@ -222,7 +222,7 @@ input[type=submit]:hover {
   align-content: center;
 }
 .blog-article {
-  width:70%;
+  width:96%;
   margin: auto;
   border:0.5px gray solid;
   padding:1%;
@@ -248,11 +248,14 @@ input[type=submit]:hover {
   margin-bottom: 1%;
 }
 .blog-filter-link {
-  border:5px gray double;
-  padding:0.5%;
+  border:0.5px white solid;
+  padding:1%;
+  margin-bottom: 1%;
   border-radius: 5px;
   background-color: ghostwhite;
   color: black !important;
+  font-size: 0.8rem;
+  cursor: pointer;
 }
 /* MEDIA RULES BEGIN */
 /* CSS rules for screens with width less than 320px go here */
@@ -329,12 +332,18 @@ main {
 }
 .blog-article, .blog-filter {
   width:100%;
+  font-size: 0.7rem;
+}
+.blog-filter-link {
+  font-size: 0.7rem;
+  max-width: 80%;
+  min-height: 55%;
 }
 }
 /* CSS rules for screens with width less than 321-650px*/
 @media only screen and (min-width: 320px) and (max-width: 650px)  {
   .div-column {
-    width:90vw;
+    width:96vw;
   }
   nav ul {
     margin:0;
@@ -392,9 +401,22 @@ main {
   .tiktok, .testimonials {
     display: none;
 }
+.container {
+  width:100%;
+  padding:0% 2% 0% 3%;
+}
+.blog-article, .blog-filter {
+  width:100%;
+  font-size: 0.7rem;
+}
+.blog-filter-link {
+  font-size: 0.7rem;
+  max-width: 90%;
+  min-height: 55%;
+}
 }
 /* CSS rules for screens with width 651-1080px */
-@media only screen and (min-width: 650px) and (max-width: 1080px)  {
+@media only screen and (min-width: 650px) and (max-width: 1300px)  {
 .div-column {
   width:90vw;
   }
@@ -411,4 +433,17 @@ nav ul {
   width:20%;
   font-size: 0.9rem;
   } 
+  .container {
+    width:100%;
+    padding:0% 2% 0% 3%;
+  }
+  .blog-article, .blog-filter {
+    width:100%;
+    font-size: 0.7rem;
+  }
+  .blog-filter-link {
+    font-size: 0.7rem;
+    max-width: 90%;
+    min-height: 55%;
+  }
 }
