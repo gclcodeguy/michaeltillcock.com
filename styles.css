@@ -257,6 +257,9 @@ input[type=submit]:hover {
   font-size: 0.8rem;
   cursor: pointer;
 }
+.inBlogLinks {
+  color: blue !important;
+}
 /* MEDIA RULES BEGIN */
 /* CSS rules for screens with width less than 320px go here */
 @media only screen and (max-width: 319px) {
